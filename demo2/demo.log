@@ -1,0 +1,76 @@
+INFO  @ Wed, 11 Mar 2020 23:15:31: Parameters: /usr/local/bin/mageck test -k demo.count.txt -t L1 -c CTRL -n demo 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Welcome to MAGeCK v0.5.9.2. Command: test 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Loading count table from demo.count.txt  
+INFO  @ Wed, 11 Mar 2020 23:15:31: Processing 1 lines.. 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Loaded 2550 records. 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Loading R template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Loading R template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Loading Rnw template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Setting up the visualization module... 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Given sample labels: L1 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Converted index: 0 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Treatment samples:L1 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Treatment sample index:0 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Given sample labels: CTRL 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Converted index: 1 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Control samples:CTRL 
+INFO  @ Wed, 11 Mar 2020 23:15:31: Control sample index:1 
+DEBUG @ Wed, 11 Mar 2020 23:15:31: Initial (total) size factor: 0.9938817131203264 1.006194081211287 
+WARNING @ Wed, 11 Mar 2020 23:15:32: Sample 0 has too many zero-count sgRNAs (0.47019607843137257), and median normalization is unstable. Switch to total read count normalization. 
+WARNING @ Wed, 11 Mar 2020 23:15:32: Sample 1 has zero median count, so median normalization is not possible. Switch to total read count normalization. 
+WARNING @ Wed, 11 Mar 2020 23:15:32: Sample 1 has too many zero-count sgRNAs (0.5003921568627451), and median normalization is unstable. Switch to total read count normalization. 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Final size factor: 0.9938817131203264 1.006194081211287 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Detecting outliers from variance estimation.. Avg read count:[0.5030970406056435], Var: [0.1394494239811855] 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Skipping 24 sgRNAs from variance calculation because of their extreme high counts (> 4* STD (mean counts) ). 
+DEBUG @ Wed, 11 Mar 2020 23:15:32: Adjusted model: 2.5820244302491853	0 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Before RRA, 0 sgRNAs are removed with zero counts in both group(s). 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Use qnorm to reversely calculate sgRNA scores ... 
+DEBUG @ Wed, 11 Mar 2020 23:15:32: lower test FDR cutoff: 0.03490196078431373 
+DEBUG @ Wed, 11 Mar 2020 23:15:32: higher test FDR cutoff: 0.01019607843137255 
+INFO  @ Wed, 11 Mar 2020 23:15:32: Running command: RRA -i demo.plow.txt -o demo.gene.low.txt -p 0.05 --skip-gene NA --skip-gene na  
+INFO  @ Wed, 11 Mar 2020 23:15:33: Command message: 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Skipping gene na for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Reading input file... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Summary: 2550 sgRNAs, 2356 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Computing lo-values for each group... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Computing false discovery rate... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Permuting genes with 1 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Permuting genes with 2 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Permuting genes with 3 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Permuting genes with 4 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Number of genes under FDR adjustment: 2356 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   Saving to output file... 
+INFO  @ Wed, 11 Mar 2020 23:15:33:   RRA completed. 
+INFO  @ Wed, 11 Mar 2020 23:15:33:    
+INFO  @ Wed, 11 Mar 2020 23:15:33: End command message. 
+INFO  @ Wed, 11 Mar 2020 23:15:33: Running command: RRA -i demo.phigh.txt -o demo.gene.high.txt -p 0.01019607843137255 --skip-gene NA --skip-gene na  
+INFO  @ Wed, 11 Mar 2020 23:15:34: Command message: 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Skipping gene na for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Reading input file... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Summary: 2550 sgRNAs, 2356 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Computing lo-values for each group... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Computing false discovery rate... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Permuting genes with 1 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Permuting genes with 2 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Permuting genes with 3 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Permuting genes with 4 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Number of genes under FDR adjustment: 2356 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   Saving to output file... 
+INFO  @ Wed, 11 Mar 2020 23:15:34:   RRA completed. 
+INFO  @ Wed, 11 Mar 2020 23:15:34:    
+INFO  @ Wed, 11 Mar 2020 23:15:34: End command message. 
+DEBUG @ Wed, 11 Mar 2020 23:15:34: Sorting the merged items by negative selection... 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Loading top 10 genes from demo.gene.low.txt: LPHN3,SIRPB1,UNC119,CADPS,CACNA1G,ESM1,TMEM198,LDLR,CFH,OAS1 
+DEBUG @ Wed, 11 Mar 2020 23:15:34: Column index:3 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Loading top 10 genes from demo.gene.high.txt: TRA2B,RUFY3,ST8SIA4,TMPRSS11E,FABP3,PPAP2C,DDX3Y,TNFSF12,NEURL4,TTLL6 
+DEBUG @ Wed, 11 Mar 2020 23:15:34: Column index:9 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Running command: rm demo.plow.txt 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Running command: rm demo.phigh.txt 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Running command: rm demo.gene.low.txt 
+INFO  @ Wed, 11 Mar 2020 23:15:34: Running command: rm demo.gene.high.txt 
+WARNING @ Wed, 11 Mar 2020 23:15:34: Warning messages generated during normalization. Please double check with the log file to make sure the normalization process is proper. 

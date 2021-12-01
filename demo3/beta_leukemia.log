@@ -1,0 +1,65 @@
+INFO  @ Wed, 07 Aug 2019 02:32:01: Parameters: /Users/weili/Dropbox/work/NGSTools/mageck/mageck.beta mle -k leukemia.new.csv -d designmat.txt -n beta_leukemia --cnv-norm cnv_data.txt --permutation-round 2 
+INFO  @ Wed, 07 Aug 2019 02:32:02: Cannot parse design matrix as a string; try to parse it as a file name ... 
+INFO  @ Wed, 07 Aug 2019 02:32:02: Design matrix: 
+INFO  @ Wed, 07 Aug 2019 02:32:02: [[1. 0. 0.] 
+INFO  @ Wed, 07 Aug 2019 02:32:02:  [1. 0. 0.] 
+INFO  @ Wed, 07 Aug 2019 02:32:02:  [1. 1. 0.] 
+INFO  @ Wed, 07 Aug 2019 02:32:02:  [1. 0. 1.]] 
+INFO  @ Wed, 07 Aug 2019 02:32:02: Beta labels:baseline,HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE,KBM7 
+INFO  @ Wed, 07 Aug 2019 02:32:02: Included samples:HL60.initial,KBM7.initial,HL60.final,KBM7.final 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Treating leukemia.new.csv as csv file ... 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Loaded samples:HL60.initial;KBM7.initial;HL60.final;KBM7.final 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Sample index: 0;1;2;3 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Loaded 1000 genes. 
+DEBUG @ Wed, 07 Aug 2019 02:32:03: Initial (total) size factor: 1.6187589797380364 1.9491565826180821 0.7360317581763139 0.6620046678574375 
+DEBUG @ Wed, 07 Aug 2019 02:32:03: Median factor: 1.4417792669748544 1.721899507573586 0.6493189729043018 0.5832530734340999 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Final size factor: 1.4417792669748544 1.721899507573586 0.6493189729043018 0.5832530734340999 
+INFO  @ Wed, 07 Aug 2019 02:32:03: size factor: 0.6935874463628563,0.5807539845395215,1.5400751275250082,1.7145216125688998 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0: total 1 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Modeling the mean and variance ... 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Run the algorithm for the second time ... 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0: total 1000 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:03: Thread 0: Calculating AAAS (1) ...  
+INFO  @ Wed, 07 Aug 2019 02:32:12: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:12: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Permuting groups of gene with 9 sgRNAs per gene. Group progress: 1/2 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Start permuting 2 rounds ... 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Collecting 9999 sgRNAs from 1000 genes. 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Permuting round 0 ... 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Thread 0: total 1000 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:13: Thread 0: Calculating AAAS (1) ...  
+INFO  @ Wed, 07 Aug 2019 02:32:21: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:21: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:21: Permuting round 1 ... 
+INFO  @ Wed, 07 Aug 2019 02:32:21: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:21: Thread 0: total 1000 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:21: Thread 0: Calculating AAAS (1) ...  
+INFO  @ Wed, 07 Aug 2019 02:32:29: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:29: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Assigning p values... 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Permuting groups of gene with 10 sgRNAs per gene. Group progress: 2/2 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Start permuting 2 rounds ... 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Collecting 9999 sgRNAs from 1000 genes. 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Permuting round 0 ... 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Thread 0: total 1000 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:30: Thread 0: Calculating AAAS (1) ...  
+INFO  @ Wed, 07 Aug 2019 02:32:38: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:38: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:38: Permuting round 1 ... 
+INFO  @ Wed, 07 Aug 2019 02:32:38: Thread 0 started. 
+INFO  @ Wed, 07 Aug 2019 02:32:38: Thread 0: total 1000 instances. 
+INFO  @ Wed, 07 Aug 2019 02:32:38: Thread 0: Calculating AAAS (1) ...  
+INFO  @ Wed, 07 Aug 2019 02:32:47: Thread 0 completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:47: All threads completed. 
+INFO  @ Wed, 07 Aug 2019 02:32:47: Assigning p values... 
+INFO  @ Wed, 07 Aug 2019 02:32:47: Performing copy number normalization. 
+INFO  @ Wed, 07 Aug 2019 02:32:48: Normalizing by copy number with HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE as the reference cell line. 
+WARNING @ Wed, 07 Aug 2019 02:32:48: KBM7 is not represented in the inputted copy number variation data. 
+INFO  @ Wed, 07 Aug 2019 02:32:48: Writing gene results to beta_leukemia.gene_summary.txt 
+INFO  @ Wed, 07 Aug 2019 02:32:48: Writing sgRNA results to beta_leukemia.sgrna_summary.txt 

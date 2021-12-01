@@ -1,0 +1,73 @@
+INFO  @ Wed, 07 Aug 2019 02:33:25: Parameters: /Users/weili/Dropbox/work/NGSTools/mageck/mageck.beta test -k sample.txt -t HL60.final,KBM7.final -c HL60.initial,KBM7.initial -n demo4 --cnv-norm cnv_data.txt --cell-line HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Welcome to MAGeCK v0.5.9. Command: test 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Loading count table from sample.txt  
+INFO  @ Wed, 07 Aug 2019 02:33:25: Processing 1 lines.. 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Loaded 999 records. 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Loading R template file: /Users/weili/Dropbox/work/NGSTools/mageck/mageck/plot_template.RTemplate. 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Loading R template file: /Users/weili/Dropbox/work/NGSTools/mageck/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Loading Rnw template file: /Users/weili/Dropbox/work/NGSTools/mageck/mageck/plot_template.Rnw. 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Setting up the visualization module... 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Given sample labels: HL60.final,KBM7.final 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Converted index: 2 3 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Treatment samples:HL60.final,KBM7.final 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Treatment sample index:2,3 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Given sample labels: HL60.initial,KBM7.initial 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Converted index: 0 1 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Control samples:HL60.initial,KBM7.initial 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Control sample index:0,1 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Initial (total) size factor: 1.6666455325878438 2.027372749328462 0.7198064117880387 0.6589869375844738 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Median factor: 1.469870985815957 1.7759474888175155 0.6308897693810006 0.5721813161032618 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Final size factor: 1.469870985815957 1.7759474888175155 0.6308897693810006 0.5721813161032618 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Detecting outliers from variance estimation.. Avg read count:[723.9972950023187], Var: [255633.28060956916] 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Skipping 4 sgRNAs from variance calculation because of their extreme high counts (> 4* STD (mean counts) ). 
+DEBUG @ Wed, 07 Aug 2019 02:33:25: Adjusted model: 1.0531637549870927	4.04934849354515 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Before RRA, 0 sgRNAs are removed with zero counts in both group(s). 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Use qnorm to reversely calculate sgRNA scores ... 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Performing copy number normalization. 
+INFO  @ Wed, 07 Aug 2019 02:33:25: Normalizing by copy number with HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE as the reference cell line. 
+DEBUG @ Wed, 07 Aug 2019 02:33:26: lower test FDR cutoff: 0.3563563563563564 
+DEBUG @ Wed, 07 Aug 2019 02:33:26: higher test FDR cutoff: 0.36936936936936937 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: RRA -i demo4.plow.txt -o demo4.gene.low.txt -p 0.3563563563563564 --skip-gene NA --skip-gene na  
+INFO  @ Wed, 07 Aug 2019 02:33:26: Command message: 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Skipping gene na for permutation ... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Reading input file... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Summary: 999 sgRNAs, 100 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Computing lo-values for each group... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Computing false discovery rate... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Increase the number of permutations to 1001 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Permuting genes with 9 sgRNAs... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Permuting genes with 10 sgRNAs... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Number of genes under FDR adjustment: 100 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Saving to output file... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   RRA completed. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:    
+INFO  @ Wed, 07 Aug 2019 02:33:26: End command message. 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: RRA -i demo4.phigh.txt -o demo4.gene.high.txt -p 0.36936936936936937 --skip-gene NA --skip-gene na  
+INFO  @ Wed, 07 Aug 2019 02:33:26: Command message: 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Skipping gene na for permutation ... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Reading input file... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Summary: 999 sgRNAs, 100 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Computing lo-values for each group... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Computing false discovery rate... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Increase the number of permutations to 1001 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Permuting genes with 9 sgRNAs... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Permuting genes with 10 sgRNAs... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Number of genes under FDR adjustment: 100 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   Saving to output file... 
+INFO  @ Wed, 07 Aug 2019 02:33:26:   RRA completed. 
+INFO  @ Wed, 07 Aug 2019 02:33:26:    
+INFO  @ Wed, 07 Aug 2019 02:33:26: End command message. 
+DEBUG @ Wed, 07 Aug 2019 02:33:26: Sorting the merged items by negative selection... 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Loading top 10 genes from demo4.gene.low.txt: ACTR8,ACIN1,AHCY,ABT1,AATF,ACLY,AHCTF1,AGBL5,ADIRF,ACTR3 
+DEBUG @ Wed, 07 Aug 2019 02:33:26: Column index:3 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Loading top 10 genes from demo4.gene.high.txt: ACRC,AGAP3,ADCK4,AHRR,ABCB8,ADNP,ADRBK1,ADRA1A,ACTR1A,ADCK5 
+DEBUG @ Wed, 07 Aug 2019 02:33:26: Column index:9 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: rm demo4.plow.txt 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: rm demo4.phigh.txt 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: rm demo4.gene.low.txt 
+INFO  @ Wed, 07 Aug 2019 02:33:26: Running command: rm demo4.gene.high.txt 

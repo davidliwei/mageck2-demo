@@ -1,0 +1,407 @@
+INFO  @ Thu, 17 Oct 2019 23:04:22: Parameters: /Users/weili/miniconda3/envs/py3knew/bin/mageck mle -k leukemia.new.csv -d designmat.txt -n beta_leukemia_2 --threads 16 
+INFO  @ Thu, 17 Oct 2019 23:04:29: Cannot parse design matrix as a string; try to parse it as a file name ... 
+INFO  @ Thu, 17 Oct 2019 23:04:29: Design matrix: 
+INFO  @ Thu, 17 Oct 2019 23:04:29: [[1. 0. 0.] 
+INFO  @ Thu, 17 Oct 2019 23:04:29:  [1. 0. 0.] 
+INFO  @ Thu, 17 Oct 2019 23:04:29:  [1. 1. 0.] 
+INFO  @ Thu, 17 Oct 2019 23:04:29:  [1. 0. 1.]] 
+INFO  @ Thu, 17 Oct 2019 23:04:29: Beta labels:baseline,HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE,KBM7 
+INFO  @ Thu, 17 Oct 2019 23:04:29: Included samples:HL60.initial,KBM7.initial,HL60.final,KBM7.final 
+INFO  @ Thu, 17 Oct 2019 23:04:29: Treating leukemia.new.csv as csv file ... 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Loaded samples:HL60.initial;KBM7.initial;HL60.final;KBM7.final 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Sample index: 0;1;2;3 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Loaded 1000 genes. 
+DEBUG @ Thu, 17 Oct 2019 23:04:30: Initial (total) size factor: 1.6187589797380364 1.9491565826180821 0.7360317581763139 0.6620046678574375 
+DEBUG @ Thu, 17 Oct 2019 23:04:30: Median factor: 1.4417792669748544 1.721899507573586 0.6493189729043018 0.5832530734340999 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Final size factor: 1.4417792669748544 1.721899507573586 0.6493189729043018 0.5832530734340999 
+INFO  @ Thu, 17 Oct 2019 23:04:30: size factor: 0.6935874463628563,0.5807539845395215,1.5400751275250082,1.7145216125688998 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0: total 1 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15: total 0 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Modeling the mean and variance ... 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Run the algorithm for the second time ... 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 1: Calculating ACAT2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 3: Calculating ACD (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 2: Calculating ACBD6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 4: Calculating ACHE (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 5: Calculating ACIN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 8: Calculating ACP1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 9: Calculating ACRC (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 11: Calculating ACSS2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 12: Calculating ACTL6A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 6: Calculating ACLY (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 0: Calculating ACAD9 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 7: Calculating ACO2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 15: Calculating ACTN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 10: Calculating ACSL6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 14: Calculating ACTL7A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:30: Thread 13: Calculating ACTL6B (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:35: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Permuting groups of gene with 9 sgRNAs per gene. Group progress: 1/2 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Start permuting 2 rounds ... 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Collecting 9999 sgRNAs from 1000 genes. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Permuting round 0 ... 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 0: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 1: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:37: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 4: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 2: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 5: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 6: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 3: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 8: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 9: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 7: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 0: Calculating ACAD9 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 1: Calculating ACAT2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 11: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 10: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 12: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 14: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 15: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 13: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 2: Calculating ACBD6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 5: Calculating ACIN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 4: Calculating ACHE (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 6: Calculating ACLY (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 8: Calculating ACP1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 3: Calculating ACD (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 9: Calculating ACRC (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 7: Calculating ACO2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 12: Calculating ACTL6A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 15: Calculating ACTN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 13: Calculating ACTL6B (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 10: Calculating ACSL6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 14: Calculating ACTL7A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:38: Thread 11: Calculating ACSS2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:41: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:41: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:41: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:41: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Permuting round 1 ... 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 0: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 1: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 3: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 4: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 2: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 6: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 7: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 8: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 5: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 9: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 10: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 0: Calculating ACAD9 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 1: Calculating ACAT2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 11: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 12: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 13: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 15: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 14: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 5: Calculating ACIN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 4: Calculating ACHE (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 3: Calculating ACD (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 2: Calculating ACBD6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 10: Calculating ACSL6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 9: Calculating ACRC (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 14: Calculating ACTL7A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 11: Calculating ACSS2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 12: Calculating ACTL6A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 15: Calculating ACTN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 13: Calculating ACTL6B (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 8: Calculating ACP1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 7: Calculating ACO2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:43: Thread 6: Calculating ACLY (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:47: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Assigning p values... 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Permuting groups of gene with 10 sgRNAs per gene. Group progress: 2/2 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Start permuting 2 rounds ... 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Collecting 9999 sgRNAs from 1000 genes. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Permuting round 0 ... 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 0: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 1: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 2: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 3: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 4: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 5: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 6: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 7: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 9: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 8: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 10: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 11: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 12: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 13: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 14: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 15: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 1: Calculating ACAT2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 0: Calculating ACAD9 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 4: Calculating ACHE (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 6: Calculating ACLY (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 3: Calculating ACD (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 7: Calculating ACO2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 8: Calculating ACP1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 11: Calculating ACSS2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 9: Calculating ACRC (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 13: Calculating ACTL6B (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 15: Calculating ACTN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 5: Calculating ACIN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 10: Calculating ACSL6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:49: Thread 12: Calculating ACTL6A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:50: Thread 2: Calculating ACBD6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:50: Thread 14: Calculating ACTL7A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:55: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:55: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:55: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:56: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Permuting round 1 ... 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 0 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 1 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 2 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 0: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 3 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 1: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 4 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 5 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 2: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 6 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 3: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 7 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 4: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 8 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 9 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 5: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 10 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 11 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 8: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 12 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 6: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 7: total 63 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 13 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 14 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 15 started. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 10: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 9: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 12: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 13: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 11: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 14: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 15: total 62 instances. 
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 4: Calculating ACHE (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 5: Calculating ACIN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 1: Calculating ACAT2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 6: Calculating ACLY (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 8: Calculating ACP1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 2: Calculating ACBD6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 14: Calculating ACTL7A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 3: Calculating ACD (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 13: Calculating ACTL6B (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 9: Calculating ACRC (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 11: Calculating ACSS2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 0: Calculating ACAD9 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 12: Calculating ACTL6A (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 10: Calculating ACSL6 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 7: Calculating ACO2 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:04:57: Thread 15: Calculating ACTN1 (1) ...  
+INFO  @ Thu, 17 Oct 2019 23:05:02: Thread 0 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:02: Thread 1 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 2 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 3 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 4 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 5 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 6 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 7 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 8 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 9 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 10 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 11 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 12 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 13 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 14 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Thread 15 completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: All threads completed. 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Assigning p values... 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Writing gene results to beta_leukemia_2.gene_summary.txt 
+INFO  @ Thu, 17 Oct 2019 23:05:03: Writing sgRNA results to beta_leukemia_2.sgrna_summary.txt 

@@ -1,0 +1,85 @@
+INFO  @ Wed, 11 Mar 2020 23:19:53: Parameters: /usr/local/bin/mageck test -k sample.txt -t HL60.final,KBM7.final -c HL60.initial,KBM7.initial -n demo --norm-method control --control-gene control_gene.txt 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Welcome to MAGeCK v0.5.9.2. Command: test 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loading count table from sample.txt  
+INFO  @ Wed, 11 Mar 2020 23:19:53: Processing 1 lines.. 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loaded 999 records. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: 1 gene(s) used as negative controls. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: 10 sgRNAs used as negative controls. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loading R template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loading R template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loading Rnw template file: /usr/local/lib/python3.8/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Setting up the visualization module... 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Given sample labels: HL60.final,KBM7.final 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Converted index: 2 3 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Treatment samples:HL60.final,KBM7.final 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Treatment sample index:2,3 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Given sample labels: HL60.initial,KBM7.initial 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Converted index: 0 1 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Control samples:HL60.initial,KBM7.initial 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Control sample index:0,1 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Loaded 10 control sgRNAs from demo.control_sgrna.txt 
+INFO  @ Wed, 11 Mar 2020 23:19:53: control sgRNAs for normalization:10 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Initial (total) size factor: 2.2379712746858167 2.012512108492089 0.6777675076120052 0.6325738353800873 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Median factor: 1.582701653316349 1.7345173601833033 0.5375843168437389 0.5105538115034376 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Final size factor: 1.582701653316349 1.7345173601833033 0.5375843168437389 0.5105538115034376 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Detecting outliers from variance estimation.. Avg read count:[743.2411470231125], Var: [270247.1925165337] 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Skipping 4 sgRNAs from variance calculation because of their extreme high counts (> 4* STD (mean counts) ). 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: Adjusted model: 1.1656488556558389	3.195810338986438 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Before RRA, 0 sgRNAs are removed with zero counts in both group(s). 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Use qnorm to reversely calculate sgRNA scores ... 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: lower test FDR cutoff: 0.5215215215215215 
+DEBUG @ Wed, 11 Mar 2020 23:19:53: higher test FDR cutoff: 0.21521521521521522 
+INFO  @ Wed, 11 Mar 2020 23:19:53: Running command: RRA -i demo.plow.txt -o demo.gene.low.txt -p 0.5 --control demo.control_sgrna.txt --skip-gene NA --skip-gene na  
+INFO  @ Wed, 11 Mar 2020 23:19:54: Command message: 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   11 control sequences loaded. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene na for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Reading input file... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Summary: 999 sgRNAs, 100 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Computing lo-values for each group... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene AHNAK for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Warning: sgRNA  not found in the ranked list.  
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Computing false discovery rate... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Increase the number of permutations to 1001 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Total # control sgRNAs: 10 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Permuting genes with 9 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Permuting genes with 10 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Number of genes under FDR adjustment: 100 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Saving to output file... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Suppressing the output of gene AHNAK since it is negative ontrol genes. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   RRA completed. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:    
+INFO  @ Wed, 11 Mar 2020 23:19:54: End command message. 
+INFO  @ Wed, 11 Mar 2020 23:19:54: Running command: RRA -i demo.phigh.txt -o demo.gene.high.txt -p 0.21521521521521522 --control demo.control_sgrna.txt --skip-gene NA --skip-gene na  
+INFO  @ Wed, 11 Mar 2020 23:19:54: Command message: 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Welcome to RRA v 0.5.9. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   11 control sequences loaded. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene NA for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene na for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Reading input file... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Summary: 999 sgRNAs, 100 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Computing lo-values for each group... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Skipping gene AHNAK for permutation ... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Warning: sgRNA  not found in the ranked list.  
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Computing false discovery rate... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Increase the number of permutations to 1001 to get precise p values. To avoid this, use the --permutation option. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Total # control sgRNAs: 10 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Permuting genes with 9 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Permuting genes with 10 sgRNAs... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Number of genes under FDR adjustment: 100 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Saving to output file... 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   Suppressing the output of gene AHNAK since it is negative ontrol genes. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:   RRA completed. 
+INFO  @ Wed, 11 Mar 2020 23:19:54:    
+INFO  @ Wed, 11 Mar 2020 23:19:54: End command message. 
+DEBUG @ Wed, 11 Mar 2020 23:19:54: Sorting the merged items by negative selection... 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Loading top 10 genes from demo.gene.low.txt: ACTR8,ACIN1,AHCY,AATF,ABT1,AHCTF1,ACLY,ADIRF,AGBL5,ACTR3 
+DEBUG @ Wed, 11 Mar 2020 23:19:55: Column index:3 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Loading top 10 genes from demo.gene.high.txt: ACRC,ABCB8,ADRA1A,AGTPBP1,AHRR,ADCK1,ACTR1A,ADNP2,ADK,ADRBK1 
+DEBUG @ Wed, 11 Mar 2020 23:19:55: Column index:9 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Running command: rm demo.plow.txt 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Running command: rm demo.phigh.txt 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Running command: rm demo.gene.low.txt 
+INFO  @ Wed, 11 Mar 2020 23:19:55: Running command: rm demo.gene.high.txt 
