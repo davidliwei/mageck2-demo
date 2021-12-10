@@ -29,6 +29,10 @@ Simply run the script "run.sh" in the respective folder. For example
 * Demo4: Correct CNV effects from RRA
 * Demo5: Use control guides in RRA or MLE
 
+## Counting UMIs using mageck2
+
+* Demo6: Count UMIs in fastq file. See the [README file on Demo6](demo6_countumi/README.md) for more details.
+
 
 
 
