@@ -34,5 +34,9 @@ Simply run the script "run.sh" in the respective folder. For example
 * Demo6: Count UMIs in fastq file. See the [README file on Demo6](demo6_countumi/README.md) for more details.
 
 
+## Counting paired-guide CRISPR screens using mageck2
+
+* Demo7: Count and search for two gRNAs in fastq file. See the [README file on Demo7](demo7_count_paired_guide/README.md) for more details.
+
 
 
