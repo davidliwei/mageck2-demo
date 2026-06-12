@@ -4,7 +4,7 @@ mageck2-demo stores the demo files for [mageck2](https://github.com/davidliwei/m
 
 # Prerequisite
 
-You will need to install [mageck2](https://github.com/davidliwei/mageck2) in your system first.
+You will need to install [mageck2](https://github.com/davidliwei/mageck2) in your system first. See the [installation instructions](https://github.com/davidliwei/mageck2-doc/blob/main/INSTALL.md) in [mageck2-doc](https://github.com/davidliwei/mageck2-doc).
 
 # How to run the demo
 
@@ -38,5 +38,14 @@ Simply run the script "run.sh" in the respective folder. For example
 
 * Demo7: Count and search for two gRNAs in fastq file. See [Demo7](demo7_count_paired_guide/README.md) for more details.
 
+# Related repositories
+
+* [mageck2](https://github.com/davidliwei/mageck2) — source code and issue tracker
+* [mageck2-doc](https://github.com/davidliwei/mageck2-doc) — installation, usage, and documentation
+* [mageck2-demo](https://github.com/davidliwei/mageck2-demo) — these example datasets and workflows
+
+# License
+
+These demo files are released under the [BSD 3-Clause License](LICENSE), the same license as mageck2.
 
 
