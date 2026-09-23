@@ -16,57 +16,70 @@ Simply execute the "run.sh" in the command line to run the demo.
 
 # Running parameters
 
-The following parameters ask mageck2 to search for possible paired-guides, and report all possible detected paired-guide counts from the fastq files.
+The following parameters ask mageck2 to count paired guides, and report all detected paired-guide counts from the fastq files.
  
-    mageck2 count -l lib/Cpf1_lib.txt -n count/pg_test --sample-label HAP1_Dual,HAP1_Dual_Torin1 --pairguide auto   --reverse-complement --list-seq-2 lib/Cas9_lib.txt  --fastq fastq/SRR10969645_1.fastq.gz fastq/SRR10969652_1.fastq.gz --fastq-2 fastq/SRR10969645_2.fastq.gz fastq/SRR10969652_2.fastq.gz
+    mageck2 count -l lib/Cpf1_lib.txt -n count/pg_test --sample-label HAP1_Dual,HAP1_Dual_Torin1 --pairguide secondpair --pg-start-2 3 --pg-end-2 23   --reverse-complement --list-seq-2 lib/Cas9_lib.txt  --fastq fastq/SRR10969645_1.fastq.gz fastq/SRR10969652_1.fastq.gz --fastq-2 fastq/SRR10969645_2.fastq.gz fastq/SRR10969652_2.fastq.gz
 
 
-The parameter to search for paired guides is
+The parameters for the second guide are
 
-    --pairguide auto  --list-seq-2 lib/Cas9_lib.txt 
+    --pairguide secondpair --pg-start-2 3 --pg-end-2 23  --list-seq-2 lib/Cas9_lib.txt
 
-This is to tell the program to automatic search the second pair of guides, defined in lib/Cas9_lib.txt, in read 1 and/or read 2 (if --fastq-2 option is provided). 
+These tell the program that the second guide is defined in lib/Cas9_lib.txt and is located
+at positions 3-23 of read 2 (supplied with --fastq-2).
 
-# Automatic search for paired-guides 
+# Locating the second guide
 
-The program will automatically invoke functions (used in UMI search), and search for the position of the second pair, which can be seen from the log file:
+`--pg-start-2 3 --pg-end-2 23` is a 0-based, end-exclusive window into read 2, so it
+selects a 20bp slice -- the length of a Cas9 guide. Read 2 in this dataset looks like:
 
+    NCGTAAACCAGCTTCTCTCACAGGTTT
+       \__________________/
+       positions 3-23: the Cas9 guide
 
-    INFO  @ Fri, 10 Dec 2021 21:23:20: --count-freq data for UMI search (A/T/G/C): 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   0  676.0/334.0/1005.0/97840.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   1  490.0/351.0/3159.0/96000.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   2  1206.0/1380.0/96291.0/1123.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   3  23641.0/31222.0/20874.0/24263.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   4  23907.0/24992.0/25487.0/25614.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   5  30009.0/25083.0/25852.0/19056.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   6  23894.0/22071.0/30305.0/23730.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   7  25325.0/23821.0/24872.0/25982.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   8  27601.0/22515.0/26819.0/23065.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   9  25463.0/21730.0/26773.0/26034.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   10 25964.0/24308.0/24283.0/25445.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   11 30569.0/23156.0/24184.0/22091.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   12 27912.0/20554.0/26844.0/24690.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   13 28507.0/21945.0/25156.0/24392.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   14 27557.0/25686.0/20188.0/26569.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   15 21366.0/22573.0/23919.0/32142.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   16 27395.0/30513.0/19355.0/22737.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   17 24901.0/29269.0/21488.0/24342.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   18 24725.0/22841.0/22141.0/30293.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   19 24447.0/19864.0/26083.0/29606.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   20 20198.0/19699.0/21011.0/39092.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   21 20903.0/19662.0/33093.0/26342.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   22 28894.0/4639.0/42112.0/24355.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   23 1585.0/12324.0/84864.0/1227.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   24 1279.0/93910.0/3375.0/1436.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20:   25 2218.0/94091.0/1717.0/1974.0 
-    INFO  @ Fri, 10 Dec 2021 21:23:20: UMI found in the second read. Position: 3-23
+To find the window for your own data, count how many reads match the second-guide library
+exactly at each candidate offset. The right offset stands out unambiguously -- here 77% of
+reads match the Cas9 library at offset 3, and under 3% at every other offset:
 
-These numbers are the A/T/G/C frequencies after the guides, where mageck2 are used to determine the possible guide locations. 
-From the frequencies, the second sgRNA starts from 3bp in the second read, and ends at 23bp. 
+    gunzip -c fastq/SRR10969645_2.fastq.gz | awk 'NR%4==2' | head -20000 > r2.txt
+    awk -F'\t' 'NR>1{print $2}' lib/Cas9_lib.txt | sort -u > lib2.txt
+    awk 'NR==FNR{lib[$1]=1; next}
+         {for(off=0; off<=5; off++){w=substr($0,off+1,20); if(w in lib) hit[off]++} tot++}
+         END{for(off=0; off<=5; off++) printf "read2[%d:%d]\t%d / %d\n",off,off+20,hit[off],tot}' \
+        lib2.txt r2.txt
+
+    read2[0:20]	104 / 20000
+    read2[1:21]	45 / 20000
+    read2[2:22]	496 / 20000
+    read2[3:23]	15465 / 20000
+    read2[4:24]	103 / 20000
+    read2[5:25]	0 / 20000
+
+Adjust the guide length (20) and the offset range to match your library and read layout.
+
+Earlier versions of this demo used `--pairguide auto`, which tried to locate the second
+guide from base composition alone. That search looked for UMIs rather than guides, and was
+removed in MAGeCK2 0.3.0 -- see
+[mageck2#32](https://github.com/davidliwei/mageck2/issues/32). The window above is the one
+it reported for this dataset, and it is correct: the commands here reproduce the counts
+shown below.
+
+The *first* guide needs no coordinates. `count` finds it on its own and reports the offset
+in the log:
+
+    INFO  @ ...: Auto determination of trim5 results: 2
+    INFO  @ ...: Possible gRNA lengths:23
+
+The 23bp Cpf1 guide starts at position 2 of read 1, reverse-complemented -- which is what
+`--reverse-complement` is for.
 
 # Dealing with reverse complements
 
 You can use the optional parameter *--reverse-complement* or *--reverse-complement-2* to use the reverse complement sequences of the guide for search.
+
+This demo needs only *--reverse-complement*, which applies to the first library
+(lib/Cpf1_lib.txt): the Cpf1 guide appears reverse-complemented in read 1, while the Cas9
+guide appears in the forward orientation in read 2.
 
 
 
@@ -117,23 +130,29 @@ If you know exactly where the second guide is located, you can use optional argu
 
 Optional arguments for counting paired-guide screens:
 
-    --pairguide {none,firstpair,secondpair,auto}
-                          Search for second gRNA, located within the first pair or the second pair of the read, or automatically search for possible guides. If you are aware of the location of the guide, specify the values of --pg-start/--pg-end (if
-                          --pairguide firstpair), or --pg-start-2/--pg-end-2 (if --pairguide secondpair). The program will automatically search for locations if --pairguide auto.
+    --pairguide {none,firstpair,secondpair}
+                          Search for second gRNA, located within the first pair or the second pair of the read. Specify the location of the guide with --pg-start/--pg-end (if --pairguide firstpair),
+                          or --pg-start-2/--pg-end-2 (if --pairguide secondpair); these are required. Note: the "auto" choice is disabled pending a reimplementation, as the search it used located UMIs
+                          rather than guides and never found a usable window.
     --list-seq-2 LIST_SEQ_2
                           A library file for the second sgRNA, containing the list of sgRNA names, their sequences and associated genes. Support file format: csv and txt.
     --reverse-complement-2
-                          Reverse complement the sequences in the second pair guide library for read mapping. Note: for performance considerations, only the guide sequences are reverse complemented, not the read.
-    --pg-start PG_START   The relative start position of UMI from guides, if UMI is found on the first pair. For example, for a read NNNNAATACGNNNCGACNNNN with guide AATACG and UMI CGAC, set --umi-start to 4 and --umi-end to 8.
-    --pg-end PG_END       The relative end position of UMI from guides, if UMI is found on the first pair.
+                          Reverse complement the sequences in the second pair guide library for read mapping. Note: for performance considerations, only the guide sequences are reverse complemented,
+                          not the read.
+    --pg-start PG_START   The relative start position of the second guide, measured from the end of the first guide, when the second guide is on the first read (--pairguide firstpair). For a second
+                          guide immediately following the first guide, set --pg-start to 0.
+    --pg-end PG_END       The relative end position of the second guide, measured from the end of the first guide, when the second guide is on the first read (--pairguide firstpair).
     --pg-start-2 PG_START_2
-                          The relative start position of UMI (from the first nucleotide of the read), if UMI is found on the second pair. For example, for a read NNNNCGAC with UMI CGAC, set --umi-start-2 to 4 and --umi-end-2 to 8.
-    --pg-end-2 PG_END_2   The relative end position of UMI (from the first nucleotide of the read), if UMI is found on the second pair.
+                          The relative start position of the second guide, measured from the first nucleotide of the second read, when the second guide is on the second read (--pairguide secondpair).
+                          For example, for a 20bp second guide at the very start of read 2, set --pg-start-2 to 0 and --pg-end-2 to 20.
+    --pg-end-2 PG_END_2   The relative end position of the second guide, measured from the first nucleotide of the second read, when the second guide is on the second read (--pairguide secondpair).
     --pg-min-read PG_MIN_READ
-                          Only report paired-guides whose total reads in all samples no less than this number. Setting to higher numbers to avoid reporting a large number of records with very few reads. Default 2.
+                          Only report paired-guides whose total reads in all samples no less than this number. Setting to higher numbers to avoid reporting a large number of records with very few
+                          reads. Default 3.
     --pg-pair-only PG_PAIR_ONLY
-                          Only report paired-guides whose combination is listed in the file designated by --pg-pair-only. Each line in this file should has the format "sgid_1 sgid_2", where sgid_1 and sgid_2 are sgRNA IDs from --list-seq and --list-seq-2,
-                          respectively.
+                          Only report paired-guides whose combination is listed in the file designated by --pg-pair-only. Each line in this file should has the format "sgid_1 sgid_2", where sgid_1 and
+                          sgid_2 are sgRNA IDs from --list-seq and --list-seq-2, respectively. IDs that were dropped from a library for duplicating an earlier sgRNA sequence are resolved to the sgRNA
+                          that represents that sequence, so a pair file written against the original library nomenclature does not need to be rewritten.
 
 
 
